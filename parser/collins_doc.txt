@@ -1,0 +1,35 @@
+The structure, data and info on website Collins:
+
+There are several kinds of pages deserve attention, they are:
+        word page:          for a single word, such as "address", "add"
+        phrase page:        for a phrase, such as "give up", "fall in love with"
+
+The word page is mainly split into several divs, they are:
+        Learner             the definition from Collins Cobuild, often contains a list of definition and a list of phrases
+        Video               a YouTube link to show how the word is pronounced
+        American
+        English
+        Example_sentences
+        Trends
+        Translations
+
+<Learner>:                  Contains all info from dictionary <<Collins Cobuild Advanced>>
+
+        <dictentry>         Different entry of the word, such as "add" has two dictentry "add" and "ADD", one of which is a verd and the other one is abbr for something
+
+        html_structure      <div class="dictionary Cob_Adv_US">...</div>
+
+<dictentry>:                Every <dictentry> is a separated group of meaning of the word,
+                            the detail of <dictentry> is not cleared yet, but we already know some important parts of it
+        word_name           the very word you search for
+        pronounce           note how the word is pronounced, followed with a button to play the sound
+        sound_button        to play the sound, it may be a link or a piece of javascript function
+        word_frequency      showed with red dots
+        word_forms          the different forms of the word, such as passive, plural etc
+        list<definition>    a list of definition
+        phrasal_verbs       a list of relevant phrasal verbs, each of which is a link to <phrase page>
+
+<definition>:               Every definition is a list of [index,
+
+
+        The structure of <word_page><Learner><definition>:
